@@ -277,3 +277,118 @@ a {
 .brand-img--icon {
     margin-right: 11px;
 }
+
+/* ========================== Service ========================== */
+.service {
+    padding-top: 60px;
+    margin-top: 46px;
+}
+
+.service-wrapper__intro {
+    display: inline-flex;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+    color: var(--text-color-nav-hover);
+}
+
+.service-wrapper__intro::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 1px;
+    background-color: var(--text-color-nav-hover);
+    margin-right: 21px;
+    margin-top: 9px;
+}
+
+.service-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-block__heading {
+    position: relative;
+    width: 520px;
+    font-size: 4.2rem;
+    color: var(--text-color-nav-hover);
+    font-weight: 600;
+    line-height: 1.23; /* 123.81% */
+    margin-top: 12px;
+}
+
+.service-block__heading::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background-color: var(--text-color-nav-hover);
+    bottom: 19px;
+    right: 103px;
+}
+
+.service-arrow {
+    display: flex;
+    margin-top: 41px;
+    margin-bottom: 9px;
+    margin-right: 76px;
+}
+
+.service-arrow__left {
+    margin-right: 17px;
+}
+
+.service-media {
+    margin-top: 76px;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-item:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 16px;
+}
+
+.service-item__img {
+    width: 370px;
+    height: 318px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
+.service-info__block {
+    padding: 24px 18px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service-info__heading {
+    color: var(--text-color-nav-hover);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.service-info__desc {
+    width: 268px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+    margin-top: 18px;
+}
