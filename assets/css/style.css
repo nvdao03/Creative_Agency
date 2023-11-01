@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color-btn: #143c3c;
+    --text-color-nav: #575d5e;
+    --text-color-nav-hover: #152427;
+    --color-share: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+}
+
 html {
     font-size: 62.5%;
 }
@@ -11,4 +23,229 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+}
+
+/* ==== Commonn ==== */
+.container {
+    width: 1140px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 57px;
+
+    font-family: "Public Sans", sans-serif;
+    display: inline-block;
+    min-width: 173px;
+    height: var(--height);
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    line-height: var(--height);
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+    background-color: var(--primary-color-btn);
+    transition: all 0.25s ease;
+}
+
+.btn:hover {
+    color: var(--primary-color-btn);
+    background-color: #e2eddf;
+    border: 1px solid var(--primary-color-btn);
+}
+
+/* ========================== Navbar ========================== */
+.header {
+    font-family: "Public Sans", sans-serif;
+    padding-top: 28px;
+    padding-bottom: 13px;
+    background-color: #fff;
+}
+
+.fixed {
+    position: sticky;
+    top: -20px;
+    bottom: -8px;
+    z-index: 1;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__list {
+    margin-left: auto;
+    display: flex;
+    margin-right: 69px;
+}
+
+.navbar__link {
+    position: relative;
+    color: var(--text-color-nav);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5; /* 155.556% */
+    padding: 8px 19px;
+}
+
+.navbar__link:hover {
+    color: var(--text-color-nav-hover);
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar__link:hover::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background-color: var(--primary-color-btn);
+    /* Tính từ thẻ <li> đi xuống */
+    bottom: -25px;
+    /* Trừ đi khoảng padding */
+    left: 19px;
+}
+
+/* ========================== Share ========================== */
+.separate {
+}
+
+.share {
+    height: 1px;
+    background-image: var(--color-share);
+}
+
+/* ========================== Hero ========================== */
+.hero {
+    font-family: "Public Sans", sans-serif;
+    padding-top: 60px;
+    padding-bottom: 87px;
+}
+
+.hero-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-content {
+    width: 34%;
+}
+
+.hero-content__heading {
+    max-width: 368px;
+    color: var(--text-color-nav-hover);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2; /* 120% */
+}
+
+.hero-content__desc {
+    color: #575d5e;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5; /* 155.556% */
+    margin-top: 20px;
+}
+
+.hero-row {
+    margin-top: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.hero-wrapper__item {
+    --height: 43px;
+
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: var(--height);
+    border-radius: 50%;
+    background-color: #83a17d;
+    text-align: center;
+    line-height: var(--height);
+    margin-right: 15px;
+}
+
+.hero-wrapper__item:hover {
+    background-color: #e2eddf;
+    border: 1px solid var(--primary-color-btn);
+}
+
+.hero-wrapper__play {
+    color: #fef6fb;
+}
+
+.hero-wrapper__item:hover .hero-wrapper__play {
+    color: var(--primary-color-btn);
+}
+
+.hero-wrapper__play--border {
+    position: absolute;
+    left: -7px;
+    top: -8px;
+}
+
+.hero-wrapper__item:hover .hero-wrapper__play--border {
+    left: -8px;
+    top: -9px;
+}
+
+.hero-wrapper__video {
+    color: var(--text-color-nav-hover);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.6; /* 166.667% */
+    cursor: pointer;
+}
+
+.hero-media {
+    position: relative;
+    width: 57%;
+    margin-left: auto;
+    margin-right: 23px;
+}
+
+.hero-media__row {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero-col--bottom {
+    transform: translateY(77px);
+}
+
+.hero-media__color {
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background-color: #4dbb9a;
+    filter: blur(137px);
+    left: 156px;
+    top: 122px;
+    z-index: -1;
+}
+
+.hero-flower {
+    position: absolute;
+}
+
+.hero-flowe--top {
 }
