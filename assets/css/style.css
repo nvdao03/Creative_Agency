@@ -811,3 +811,69 @@ a {
 .project-btn:hover {
     background-color: #4dbb9a;
 }
+
+/* ========================== Feature ========================== */
+.feature {
+    padding-top: 60px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.feature-heading {
+    width: 520px;
+    color: var(--text-color-nav-hover);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.23; /* 123.81% */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-desc {
+    width: 547px;
+    color: #7d8188;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62; /* 162.5% */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 45px;
+    margin-top: 103px;
+}
+
+.feature-item {
+    padding: 80px 37px 74px;
+    border-radius: 160px;
+    border: 1.5px solid #cecece;
+    cursor: pointer;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-59px);
+    box-shadow: 0px 36px 100px 0px rgba(111, 120, 111, 0.2);
+    border: none;
+}
+
+.feature-item__title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+    margin-top: 26px;
+}
+
+.feature-item__desc {
+    text-align: center;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71; /* 171.429% */
+    margin-top: 9px;
+}
