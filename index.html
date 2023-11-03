@@ -517,6 +517,73 @@
                     </div>
                 </div>
             </section>
+            <!-- Project -->
+            <section class="project">
+                <div class="container">
+                    <!-- Heading row -->
+                    <section class="project-row">
+                        <h2 class="project-heading">
+                            A quick glance of our past projects
+                        </h2>
+                        <div class="project-wrap">
+                            <p class="project-wrap__desc">
+                                Are you strive for the fast project simplicity
+                                and clarity. Great design is born of those two
+                                things.
+                            </p>
+                            <a href="#!" class="project-wrap__link">
+                                Browse all Projects
+                                <img
+                                    src="./assets/icon/project_arrow.svg"
+                                    alt=""
+                                    class="project-wrap__link--icon"
+                                />
+                            </a>
+                        </div>
+                    </section>
+                    <!-- Video -->
+                    <div class="project-video">
+                        <video
+                            id="video-demo"
+                            class="project-video__demo"
+                            controls="controls"
+                        >
+                            <source
+                                src="./assets/video/production_id_4782485 (2160p).mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                        <button
+                            type="submit"
+                            name="project-btn"
+                            class="project-btn"
+                            id="play-btn"
+                            onclick="playButtonVideo()"
+                        >
+                            <img
+                                src="./assets/icon/play_video.svg"
+                                alt=""
+                                class="project-btn__icon"
+                            />
+                        </button>
+                        <script>
+                            var video = document.getElementById("video-demo");
+                            var button = document.getElementById("play-btn");
+                            video.removeAttribute("controls");
+
+                            function playButtonVideo() {
+                                if (video.paused) {
+                                    video.play();
+                                    button.style.display = "none";
+                                    video.setAttribute("controls", "controls");
+                                } else {
+                                    video.pause();
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>

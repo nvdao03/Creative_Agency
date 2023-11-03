@@ -721,3 +721,93 @@ a {
     margin-left: auto;
     margin-right: 41px;
 }
+
+/* ========================== Project ========================== */
+.project {
+    margin-top: 148px;
+    padding: 116px 0 63px;
+    background-color: #143c3c;
+}
+
+.project-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-heading {
+    position: relative;
+    width: 40%;
+    font-size: 4.2rem;
+    color: #e7f9f9;
+    font-weight: 600;
+    line-height: 1.23; /* 123.81% */
+}
+
+.project-heading::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background-color: #83a17d;
+    bottom: 20px;
+    right: 97px;
+}
+
+.project-wrap {
+    font-family: "Public Sans", sans-serif;
+    width: 51%;
+}
+
+.project-wrap__desc {
+    color: #6a8383;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5; /* 155.556% */
+}
+
+.project-wrap__link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5; /* 155.556% */
+    margin-top: 18px;
+}
+
+.project-wrap__link--icon {
+    margin-left: 26px;
+}
+
+.project-video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.project-video__demo {
+    width: 1140px;
+    height: 544px;
+    border-radius: 22px;
+    object-fit: cover;
+}
+
+.project-btn {
+    position: absolute;
+    width: 118px;
+    height: 118px;
+    border: none;
+    padding: 41px 41px 41px 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.project-btn:hover {
+    background-color: #4dbb9a;
+}
