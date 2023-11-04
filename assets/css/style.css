@@ -1044,3 +1044,144 @@ a {
     background-color: #c4c4c4;
     margin-bottom: 15px;
 }
+
+/* ========================== Footer ========================== */
+.footer-body {
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact {
+    width: 37%;
+}
+
+.footer {
+    margin-top: 42px;
+    padding-top: 72px;
+    padding-bottom: 50px;
+    background-color: var(--primary-color-btn);
+}
+
+.footer-contact__heading {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.footer-form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 354px;
+    margin-top: 25px;
+    padding-bottom: 36px;
+}
+
+.footer-form::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #6a8383;
+}
+
+.footer-form__input {
+    width: 183px;
+    height: 22px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.footer-form__input::placeholder {
+    color: #6a8383;
+}
+
+.footer-form__btn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 132px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 0 22px;
+    margin-top: 47px;
+}
+
+.social-link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.social-link:hover {
+    background-color: #a75325;
+}
+
+.social-link__icon--instagram {
+    position: absolute;
+}
+
+.footer-row {
+    font-family: "Public Sans", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 50px;
+    margin-left: auto;
+    margin-right: 19px;
+}
+
+.footer-list {
+    margin-top: 6px;
+}
+
+.footer-col__heading {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.5; /* 155.556% */
+}
+
+.footer-list__link {
+    color: #6a8383;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.2; /* 225% */
+}
+
+.footer-separate {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #143c3c 2.28%,
+        #295a5a 55.65%,
+        rgba(38, 82, 82, 0) 102.06%
+    );
+    margin-top: 45px;
+}
+
+.copyright {
+    display: block;
+    margin-top: 28px;
+    text-align: center;
+    color: #aab3ba;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
