@@ -566,21 +566,6 @@
                                 class="project-btn__icon"
                             />
                         </button>
-                        <script>
-                            var video = document.getElementById("video-demo");
-                            var button = document.getElementById("play-btn");
-                            video.removeAttribute("controls");
-
-                            function playButtonVideo() {
-                                if (video.paused) {
-                                    video.play();
-                                    button.style.display = "none";
-                                    video.setAttribute("controls", "controls");
-                                } else {
-                                    video.pause();
-                                }
-                            }
-                        </script>
                     </div>
                 </div>
             </section>
@@ -903,5 +888,22 @@
                 2021 GDN. Copyright and All rights reserved.
             </p>
         </footer>
+
+        <!-- JS -->
+        <script>
+            var video = document.getElementById("video-demo");
+            var button = document.getElementById("play-btn");
+            video.removeAttribute("controls");
+
+            function playButtonVideo() {
+                if (video.paused) {
+                    video.play();
+                    button.style.display = "none";
+                    video.setAttribute("controls", "controls");
+                } else {
+                    video.pause();
+                }
+            }
+        </script>
     </body>
 </html>

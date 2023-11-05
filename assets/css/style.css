@@ -731,6 +731,7 @@ a {
 
 /* ========================== Project ========================== */
 .project {
+    position: relative;
     margin-top: 148px;
     padding: 116px 0 63px;
     background-color: #143c3c;
